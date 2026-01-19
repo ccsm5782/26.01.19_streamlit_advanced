@@ -6,8 +6,10 @@ import FinanceDataReader as fdr
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots # 서브플롯 생성을 위한 라이브러리
 import os
+from dotenv import load_dotenv
 
 # 환경 변수 및 헤더 설정
+load_dotenv()
 my_name = os.getenv('MY_NAME')
 st.header(f"📈 {my_name}의 주가 분석 서비스")
 
